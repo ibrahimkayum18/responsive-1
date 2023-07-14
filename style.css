@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.ff{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray-1, #333);
+}
+.orange{
+    color: orange;
+}
+.gray{
+    color: gray;
+}
+body{
+    width: 85%;
+    margin: auto;
+}
+.header{
+    
+    
+}
+.header-text h2{
+    font-size: 50px;
+}
+.header-text p{
+    display: flex;
+    gap: 0px 10px;
+    color: var(--gray-1, #333);
+}
+.header-text p img{
+    /* margin-top: 1px; */
+    margin-bottom: 35px;
+}
+.header-text p{
+    width: 75%;
+    margin-bottom: 30px;
+}
+.header-img img{
+    width: 100%;
+    margin: auto;
+}
+.measur{
+    grid-area: measure;
+}
+.service{
+    grid-area: service;
+    display: flex;
+    flex-direction: column;
+    background-color: White;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 280px;
+    width: 200px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.service i{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.icon-1{
+    color: orange;
+    font-size: 35px;
+}
+
+.service .ico{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.ico p{
+    margin-bottom: 5px;
+}
+.container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: "measure measure service";
+}
+.measur h2{
+    font-size: 30px;
+    color: var(--gray-1, #333);
+}
+.measur h3{
+    margin: 30px 0px;
+}
+.measur p{
+    margin-bottom: 10px;
+}
+.ingd{
+    /* line-height: 25px; */
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray-1, #333);
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .header{
+        width: 90%;
+    }
+    .header-text h2{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .header-text p{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 100%;
+        /* padding: 20px; */
+    }
+    .header-text p img{
+        margin-bottom: 130px;
+    }
+    .header-img img{
+        padding: 15px;
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        /* grid-template-areas: "services" "measure"; */
+    }
+    .measur{
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
